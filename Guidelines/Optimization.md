@@ -63,9 +63,26 @@ Non sovraccaricare una singola pagina del report con troppe visualizzazioni:
 
 ## 9. Analizza le performance del report  
 Se il report è lento, utilizza strumenti come **DAX Studio** e **Measure Killer** per individuare le misure o le query che stanno rallentando l’elaborazione.  
-- **DAX Studio** ti permette di analizzare i tempi di esecuzione delle misure e ottimizzarle.  
-- **Measure Killer** aiuta a identificare quali misure stanno pesando di più sul report.  
 
+- **DAX Studio**  
+  *Descrizione:* DAX Studio è uno strumento essenziale per scrivere, analizzare e ottimizzare codice DAX. Offre funzionalità avanzate per la gestione di query e il monitoraggio delle prestazioni.  
+  *Download:* [DAX Studio](https://daxstudio.org/)
+
+- **Tabular Editor**  
+  *Descrizione:* Tabular Editor è un editor avanzato per modelli tabulari che permette modifiche rapide e gestione efficiente delle misure e dei calcoli DAX.  
+  *Download:* [Tabular Editor](https://tabulareditor.com/)
+
+- **Measure Killer**  
+  *Descrizione:* Questo tool aiuta a identificare le misure inutilizzate in un modello Power BI, migliorando le prestazioni e riducendo il carico del modello.  
+  *Download:* [Measure Killer](https://thebipower.fr/index.php/2021/05/24/measure-killer/)
+
+- **Bravo for Power BI**  
+  *Descrizione:* Bravo è uno strumento gratuito che aiuta a gestire modelli Power BI ottimizzando il formato delle misure DAX, esportando dati in Excel e migliorando le prestazioni.  
+  *Download:* [Bravo for Power BI](https://bravo.bi/)
+
+- **VertiPaq Analyzer**  
+  *Descrizione:* Strumento di analisi per modelli tabulari che aiuta a comprendere l'utilizzo della memoria e le ottimizzazioni necessarie per migliorare le prestazioni.  
+  *Download:* [VertiPaq Analyzer](https://www.sqlbi.com/tools/vertipaq-analyzer/)
 ---
 
 ## 10. Utilizza un sistema di Version Control (Git) per il versioning dei report  
