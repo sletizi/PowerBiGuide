@@ -14,7 +14,7 @@ Questa guida è pensata per aiutare sviluppatori e analisti a costruire report *
 ---
 
 ### 📂 **Struttura del repository**  
-- **📁 Guidelines**: documentazione dettagliata sui vari aspetti dell’ottimizzazione.  
-- **📁 Use Cases**: esempi pratici di report Power BI.  
+- **📁 Guidelines**: documentazione dettagliata sui vari aspetti di  PowerBI , legati all’ottimizzazione e non.  
+- **📁 Use Cases**: esempi pratici di report Power BI. (modellazione, formule DAX)
 
 ---
