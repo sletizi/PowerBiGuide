@@ -1,0 +1,5 @@
+StoreCode,StoreName,City,Latitude,Longitude,Area
+1,Coop Marche,Ancona,43.6158,13.5189,Centro
+2,Coop Lazio,Roma,41.9028,12.4964,Centro
+3,Coop Campania,Napoli,40.8518,14.2681,Sud
+4,Coop Lombardia,Milano,45.4642,9.19,Nord
