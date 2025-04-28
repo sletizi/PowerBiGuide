@@ -83,8 +83,6 @@ Contains the geographical and structural details of each retail store.
 - `daily_sales.csv` → `calendar_retail.csv` via `Date`
 - `daily_sales.csv` → `stores.csv` via `StoreCode` and `StoreWarehouse`
 
-
-
 ---
 
 This data model enables detailed and flexible analysis of sales trends, product performance, store comparisons, and retail time-based analytics using Power BI.
