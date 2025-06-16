@@ -1,17 +1,19 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Power BI Guide</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Docsify core script -->
-
-</head>
-<body>
-  <div id="app">Loading...</div>
-
-  <script>
-    window.$docsify = {
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
       name: 'Power BI Guide',
       repo: 'https://github.com/sletizi/PowerBiGuide',
       loadSidebar: true,
@@ -20,9 +22,7 @@
         '/.*/_sidebar.md': '/_sidebar.md'
       }
     };
-  </script>
-  
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <link rel="stylesheet" href="//unpkg.com/docsify-themeable@0/dist/css/theme-simple.css">
-</body>
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  </body>
 </html>
