@@ -46,24 +46,15 @@ Introdotto più recentemente, il formato `.pbip` è progettato per supportare sc
 
 **Struttura tipica di un progetto PBIP:**
 ```
-my-report.pbip
-├── dataset
-│   ├── DataModelSchema
-│   ├── DataSources.json
-│   ├── DiagramLayout.json
-│   ├── Expressions.json
-│   └── Model.bim
-├── report
-│   └── Report.json
-└── my-report.pbip (file manifest)
+Project/
+├── AdventureWorks.Report/
+├── AdventureWorks.SemanticModel/
+├── .gitignore
+└── AdventureWorks.pbip
 ```
 
-**Cosa è possibile versionare:**
-- **Model.bim**: modello semantico (tabelle, misure, DAX, relazioni)
-- **Expressions.json**: query Power Query, parametri, tabelle calcolate
-- **DiagramLayout.json**: layout visivo del diagramma del modello
-- **Report.json**: layout e configurazione delle pagine report
-- **DataSources.json**: connessioni dati
+più dettagli al link:
+https://learn.microsoft.com/it-it/power-bi/developer/projects/projects-overview
 
 **Vantaggi:**
 - Ogni componente è versionabile in modo indipendente

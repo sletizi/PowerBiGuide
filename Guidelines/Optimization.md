@@ -54,14 +54,21 @@ I parametri in Power BI sono estremamente utili per offrire flessibilità agli u
 
 ---
 
-## 8. Limita il numero di visualizzazioni per pagina  
+## 8. Cerca di evitare l'utilizzo di colonne di tipo timestamp  
+VertiPaq comprime meglio le colonne con bassa cardinalità, quindi le colonne timestamp (molto dettagliate) occupano molta memoria. Separarle in date e time riduce la cardinalità e migliora la compressione. Questo porta a modelli più leggeri e performanti in Power BI.
+Per maggiori dettagli guarda il caso di studio preso come esempio: [Datetime field splitted in Date and Time](../Use%20Cases/Datetime%20field%20splitted%20in%20Date%20and%20Time/readme.md)
+
+
+---
+
+## 9. Limita il numero di visualizzazioni per pagina  
 Non sovraccaricare una singola pagina del report con troppe visualizzazioni:  
 - **Mantieni un design pulito** e facilmente leggibile, concentrandoti su 4-6 visualizzazioni per pagina.  
 - **Blocca la visualizzazione di troppi record contemporaneamente** utilizzando filtri predefiniti, come la selezione di un singolo mese o trimestre per volta.  
 
 ---
 
-## 9. Analizza le performance del report  
+## 10. Analizza le performance del report  
 Se il report è lento, utilizza strumenti come **DAX Studio** e **Measure Killer** per individuare le misure o le query che stanno rallentando l’elaborazione.  
 
 - **DAX Studio**  
@@ -74,7 +81,7 @@ Se il report è lento, utilizza strumenti come **DAX Studio** e **Measure Killer
 
 - **Measure Killer**  
   *Descrizione:* Questo tool aiuta a identificare le misure inutilizzate in un modello Power BI, migliorando le prestazioni e riducendo il carico del modello.  
-  *Download:* [Measure Killer](https://thebipower.fr/index.php/2021/05/24/measure-killer/)
+  *Download:* [Measure Killer](https://www.brunner.bi/measurekiller)
 
 - **Bravo for Power BI**  
   *Descrizione:* Bravo è uno strumento gratuito che aiuta a gestire modelli Power BI ottimizzando il formato delle misure DAX, esportando dati in Excel e migliorando le prestazioni.  
@@ -83,15 +90,17 @@ Se il report è lento, utilizza strumenti come **DAX Studio** e **Measure Killer
 - **VertiPaq Analyzer**  
   *Descrizione:* Strumento di analisi per modelli tabulari che aiuta a comprendere l'utilizzo della memoria e le ottimizzazioni necessarie per migliorare le prestazioni.  
   *Download:* [VertiPaq Analyzer](https://www.sqlbi.com/tools/vertipaq-analyzer/)
+
 ---
 
-## 10. Utilizza un sistema di Version Control (Git) per il versioning dei report  
+## 11. Utilizza un sistema di Version Control (Git) per il versioning dei report  
 Versionare i report Power BI con Git consente di:  
 - **Tracciare tutte le modifiche apportate** nel tempo.  
 - **Collaborare in team** evitando conflitti.  
 - **Ripristinare versioni precedenti** in caso di errori o regressioni.  
 
 ### 📌 Come utilizzare Git per Power BI  
-- **Salva i report `.pbix` nel repository Git**, organizzando la struttura del progetto in cartelle (report, script SQL, documentazione).  
-- Se vuoi un controllo più granulare, **estrai il contenuto del file `.pbix` in formato `.pbit`** (template) e traccia i singoli file JSON e XML.  
+- **Salva i report `.pbip` nel repository Git**, organizzando la struttura del progetto in cartelle.  
 - Automatizza i commit con **script PowerShell** o integra una pipeline CI/CD per garantire che le versioni siano sempre aggiornate.
+- Utilizza Git Integration nel Service di PowerBI per sincronizzare i tuoi workspace con il contenuto dei PowerBI hostato su Github o su Azure DevOps: https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-get-started?tabs=azure-devops%2CAzure%2Ccommit-to-git
+- Se vuoi una pipeline di CI/CD utilizza deployment pipeline per fare deploy di modelli e report su workspace differenti (ad esempio per deployare il contenuto di dev su prod): https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines?tabs=from-fabric%2Cnew-ui
